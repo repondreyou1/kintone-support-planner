@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/kintone/:subdomain/(.*)",
+            "destination": "/api/proxy?subdomain=:subdomain&path=$1"
+        }
+    ]
+}
